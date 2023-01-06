@@ -1,8 +1,8 @@
-import type { NextFontWithVariable } from "@next/font/dist/types";
+import type { NextFontWithVariable } from '@next/font/dist/types';
 
 export type SharedTheme = {
   fonts: {
-    fontPrimary: NextFontWithVariable,
+    fontPrimary: NextFontWithVariable;
     sizes: {
       xs: '12px';
       sm: '14px';
@@ -14,4 +14,16 @@ export type SharedTheme = {
   };
 };
 
-export type Theme = SharedTheme & {};
+export type Theme = SharedTheme & {
+  colors: {
+    primary: string;
+
+    gray: {
+      100: string;
+      500: string;
+      600: string;
+      800: string;
+      900: string;
+    };
+  };
+};
