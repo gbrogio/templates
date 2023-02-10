@@ -1,7 +1,6 @@
-import type { Theme } from 'types/Theme';
 import { SHARED_THEME } from './shared';
 
-export const DEFAULT_THEME: Theme = {
+export const DEFAULT_THEME = {
   ...SHARED_THEME,
 
   colors: {

@@ -1,11 +1,10 @@
-import type { SharedTheme } from 'types/Theme';
 import { Inter } from '@next/font/google';
 
 const inter = Inter({
   variable: '--font-primary',
 });
 
-export const SHARED_THEME: SharedTheme = {
+export const SHARED_THEME = {
   fonts: {
     fontPrimary: inter,
     sizes: {
